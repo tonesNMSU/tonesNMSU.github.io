@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Body styling */
+body {
+  width: 100%;
+  background: url(/images/blackBG.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  font-family: sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 86%;
+  display: flex;
+  margin: auto;
+  padding: 15px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo styling */
+.navbar .logo {
+  width: 170px;
+  cursor: pointer;
+  margin-top: 2%;
+  margin-left: -2%;
+}
+
+/* Navigation styling */
+ul {
+  margin-top: 2%;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 16px;
+}
+
+ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: whitesmoke;
+  margin-top: -3%;
+}
+
+/* Hover effect for navigation */
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Header styling */
+.info {
+  margin-left: 10%;
+  margin-top: 11%;
+}
+
+.info h1 {
+  font-size: 65px;
+  color: whitesmoke;
+}
+
+.info h2 {
+  color: whitesmoke;
+  font-size: 35px;
+}
+
+.info h3 {
+  color: whitesmoke;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+/* Button styling */
+.info a {
+  text-decoration: none;
+  color: aliceblue;
+  background: grey;
+  margin: 15px 0;
+  padding: 10px 18px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: 0.4s ease;
+}
+
+.info a:hover {
+  background: whitesmoke;
+}
+
+/* Image styling */
+.image {
+  width: 20%;
+  height: 40%;
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+
+.image img {
+  position: absolute;
+  height: 140%;
+  left: 20%;
+  top: -65%;
+  transform: translate(-110%);
+  bottom: 0;
+  transition: left 2s ease;
+}
+
+/* Image hover effect */
+.image:hover .me {
+  left: 55%;
+}
+
+/* Social media icons styling */
+.icons {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* Social media icon hover effect */
+.icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.icons ion-icon {
+  color: whitesmoke;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+.icons ion-icon:hover {
+  color: aqua;
+}
+
+/* Footer styling */
+.newicons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 33%;
+  left: 0;
+  gap: 16px;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.newicons a {
+  color: whitesmoke;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.newicons a:hover {
+  color: aqua;
+}
+
+.newicons a.phone-text {
+  color: whitesmoke;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.newicons a.phone-text:hover {
+  color: aqua;
+}
+
+/* Name styling */
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+/* Gaming header and content styling for white text */
+.gaming,
+.gaming h1,
+.gaming h2,
+.gaming p {
+  color: white;
+}
+
+/* Layout for gaming content */
+.gaming {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gaming p {
+  text-align: center;
+}
+
+/* Valorant and Overwatch sections */
+.valorant,
+.overwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.valorant h2,
+.overwatch h2 {
+  text-align: center;
+}
+
+.valorant p,
+.overwatch p {
+  text-align: justify;
+}
+
+/* Image styling */
+.valpic {
+  width: 95%;
+  margin-top: 10px;
+}
+
+.owpic {
+  width: 72%;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .gaming {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valorant,
+  .overwatch {
+    width: 90%;
+  }
+}
+
+/* PC building header and content styling for white text */
+.pc-building {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pc-building h1 {
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.pc-building p {
+  color: whitesmoke;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* PC building image styling */
+.pc-pics {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pc-pics img {
+  width: calc(50% - 10px);
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .pc-pics {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .pc-pics img {
+    width: calc(50% - 10px);
+    max-width: none;
+  }
+}
+
+/* Family header and content styling for white text */
+.family {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.family h1 {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+}
+
+.family h4 {
+  grid-column: 1 / -1;
+  margin-bottom: 30px;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Image styling */
+.family img {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .family h1,
+  .family h4 {
+    grid-column: 1 / -1;
+  }
+}
